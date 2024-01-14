@@ -15,4 +15,3 @@ void my_custom_element_xtr_output(CustomElement *elements_data, bool is_h) {
 
         my_custom_printstr(" \n");
     }
-}
