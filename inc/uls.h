@@ -23,27 +23,27 @@ typedef enum {
     CUSTOM_DEFAULT_OUTPUT,
     CUSTOM_ONEROW_OUTPUT,
     CUSTOM_L_OUTPUT,
-} CustomOutput;
+} t_output;
 
 typedef enum {
     CUSTOM_MOD,
     CUSTOM_STAT,
     CUSTOM_ACC,
     CUSTOM_CREATE,
-} CustomTime;
+} t_time;
 
 typedef enum {
     CUSTOM_NAME,
     CUSTOM_TIME,
     CUSTOM_SIZE,
     CUSTOM_NONE,
-} CustomSort;
+} t_sort;
 
 typedef enum {
     CUSTOM_HIDDEN,
     CUSTOM_DOTS,
     CUSTOM_ZERO,
-} CustomHidden;
+} t_hidden;
 
 typedef struct {
     CustomOutput format;
@@ -65,7 +65,7 @@ typedef struct {
     bool is_n;
     bool is_q;
     bool is_H;
-} CustomFlags;
+} t_flag;
 
 CustomFlags *my_custom_make_flags(void);
 CustomFlags *my_custom_init_flags(int argc, char *argv[]);
@@ -81,7 +81,7 @@ typedef struct {
     acl_t acl;
     struct stat stat;
     struct timespec timespec;
-} CustomElement;
+} t_element;
 
 char *my_custom_take_user_info(uid_t uid, bool number);
 char *my_custom_take_group_info(gid_t gid, bool number);
@@ -107,7 +107,7 @@ typedef struct {
     int user;
     int group;
     int size;
-} CustomWidth;
+} t_width;
 
 /* Custom Formatted output pack */
 void my_custom_element_color_output(mode_t mode);
@@ -155,9 +155,7 @@ char *my_custom_strjoin_with_delim(const char *s1, const char *s2, char delim);
 int my_custom_validate_elements(t_list* elements);
 int my_custom_validate_flags(CustomFlags *flags);
 
-void mx_clear_list(t_list **list); 
-t_list *mx_sort_list_vertices(t_list *lst, void *vertex, bool(*cmp)(void *, void *, void *)); 
-t_list *mx_sort_list_objects(t_list *list, bool (*cmp)(void *, void *), bool reverse); 
+void my_custom_clear_list(t_list **list); 
 
 #endif
 
