@@ -13,3 +13,4 @@ blkcnt_t my_custom_block_num(t_list *elements) {
 
     return blocks;
 }
+

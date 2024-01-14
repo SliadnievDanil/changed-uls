@@ -16,3 +16,4 @@ CustomElement **my_custom_create_arr_from_list(t_list *objects_info, int *counte
 
     return array;
 }
+

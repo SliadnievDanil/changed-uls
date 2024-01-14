@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void my_custom_default_output(t_list *elements_data, CustomFlags *flags) {
+void my_custom_default_output(t_list *elements_data, t_flag *flags) {
     int tab_len = 8;
 
     if (flags->is_G) {
@@ -55,3 +55,4 @@ void my_custom_default_output(t_list *elements_data, CustomFlags *flags) {
         free(array);
     }
 }
+

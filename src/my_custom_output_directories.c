@@ -20,3 +20,4 @@ bool my_custom_output_directories(t_list *directories, t_flags *flags, bool prin
 
     return ret;
 }
+

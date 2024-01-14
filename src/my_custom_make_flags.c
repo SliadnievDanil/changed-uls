@@ -10,3 +10,4 @@ t_flags *my_custom_make_flags(void) {
 
     return flags;
 }
+

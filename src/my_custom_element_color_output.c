@@ -33,3 +33,4 @@ void my_custom_element_color_output(mode_t mode) {
         }
     }
 }
+

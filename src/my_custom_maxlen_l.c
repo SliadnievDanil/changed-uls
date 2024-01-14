@@ -44,3 +44,4 @@ t_width my_custom_maxlen_l(t_list *elements_data, t_flags *flags) {
 
     return width;
 }
+

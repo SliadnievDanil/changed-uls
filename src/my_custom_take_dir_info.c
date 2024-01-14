@@ -18,3 +18,4 @@ bool my_custom_take_dir_info(t_list **objects, const char *name, t_flags *flags)
 
     return true;
 }
+

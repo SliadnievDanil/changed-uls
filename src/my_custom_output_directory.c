@@ -50,8 +50,9 @@ bool my_custom_output_directory(t_element *element_data, t_flags *flags, bool my
 
         mx_clear_list(&directories);
     }
-
+    
     mx_free_elements(elements_data);
 
     return result;
 }
+

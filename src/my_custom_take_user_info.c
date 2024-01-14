@@ -9,3 +9,4 @@ char *my_custom_take_user_info(uid_t uid, bool number) {
 
     return mx_strdup(passwd->pw_name);
 }
+

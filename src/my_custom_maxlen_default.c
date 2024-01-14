@@ -16,3 +16,4 @@ int my_custom_maxlen_default(t_list *elements_data) {
 
     return width;
 }
+

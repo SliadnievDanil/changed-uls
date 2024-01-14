@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void my_custom_free_elements(CustomList *elements_data) {
+void my_custom_free_elements(t_list *elements_data) {
     CustomList *helper = elements_data;
 
     while (helper != NULL) {
@@ -11,3 +11,4 @@ void my_custom_free_elements(CustomList *elements_data) {
 
     my_custom_clear_list(&elements_data);
 }
+

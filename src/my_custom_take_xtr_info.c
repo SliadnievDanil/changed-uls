@@ -16,3 +16,4 @@ char **my_custom_take_xtr_info(const char *filename) {
 
     return NULL;
 }
+

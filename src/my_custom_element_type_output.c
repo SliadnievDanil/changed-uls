@@ -17,3 +17,4 @@ void my_custom_element_type_output(mode_t mode) {
         my_custom_printchar('-');
     }
 }
+

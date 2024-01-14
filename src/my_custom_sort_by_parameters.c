@@ -18,3 +18,4 @@ void my_custom_sort_by_parameters(t_list *elements_data, t_sort sort_type, bool 
         break;
     }
 }
+

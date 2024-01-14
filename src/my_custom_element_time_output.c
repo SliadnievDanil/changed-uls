@@ -35,3 +35,4 @@ void my_custom_element_time_output(time_t ptime, bool full) {
 
     my_custom_del_strarr(&arr);
 }
+

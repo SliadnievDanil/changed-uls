@@ -15,3 +15,4 @@ int my_custom_validate_elements(t_list *elements) {
 
     return counter;
 }
+

@@ -23,3 +23,4 @@ void my_custom_element_acl_output(acl_t acl) {
     my_custom_del_strarr(&rows);
     free(str);
 }
+

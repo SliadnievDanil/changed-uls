@@ -29,3 +29,4 @@ int my_custom_element_class_output(mode_t mode, bool is_p_only) {
 
     return 0;
 }
+

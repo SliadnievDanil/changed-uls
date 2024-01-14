@@ -1,7 +1,7 @@
 #include "uls.h"
 
-CustomElement *my_custom_init_element_data(const char *directory, const char *name, CustomFlags *flags) {
-    CustomElement *object_info = malloc(sizeof(CustomElement));
+CustomElement *my_custom_init_element_data(const char *directory, const char *name, t_flags *flags) {
+    t_element *object_info = malloc(sizeof(t_element));
     object_info->path = my_custom_strjoin_with_delim(directory, name, '/');
     object_info->name = my_custom_strdup(name);
     object_info->user = NULL;
@@ -42,3 +42,4 @@ CustomElement *my_custom_init_element_data(const char *directory, const char *na
 
     return object_info;
 }
+

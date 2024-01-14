@@ -1,7 +1,7 @@
 #include "uls.h"
 
 CustomFlags *my_custom_init_flags(int argc, char *argv[]) {
-    CustomFlags *flags = my_custom_make_flags();
+    t_flags *flags = my_custom_make_flags();
 
     for (int i = 1; i < argc; i++) {
         if (argv[i][0] != '-') {
@@ -95,3 +95,4 @@ CustomFlags *my_custom_init_flags(int argc, char *argv[]) {
 
     return flags;
 }
+

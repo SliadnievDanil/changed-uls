@@ -29,3 +29,4 @@ void my_custom_element_perm_output(mode_t mode) {
         my_custom_printchar((mode & S_ISTXT) ? 'T' : '-');
     }
 }
+

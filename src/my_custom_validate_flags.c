@@ -26,3 +26,4 @@ int my_custom_validate_flags(t_flags *flags) {
     result += 18;
     return result;
 }
+

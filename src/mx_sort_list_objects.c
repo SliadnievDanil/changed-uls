@@ -27,3 +27,4 @@ t_list *mx_sort_list_objects(t_list *list, bool (*cmp)(void *, void *), bool rev
 
     return list;
 }
+

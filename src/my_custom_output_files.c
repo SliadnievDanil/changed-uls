@@ -6,3 +6,4 @@ void my_custom_output_files(t_list *files, t_flags *flags) {
         my_custom_output_type(files, flags);
     }
 }
+

@@ -12,3 +12,4 @@ struct timespec my_custom_take_time_info(struct stat *stat, t_time time_type) {
     }
     return stat->st_mtimespec;
 }
+

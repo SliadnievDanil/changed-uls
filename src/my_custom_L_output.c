@@ -8,3 +8,4 @@ void my_custom_L_output(t_list *elements_data, t_flags *flags) {
         elements_data = elements_data->next;
     }
 }
+

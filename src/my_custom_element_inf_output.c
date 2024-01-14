@@ -1,6 +1,6 @@
 #include "uls.h"
 
-int my_custom_element_inf_output(CustomElement *object_info, CustomFlags *flags) {
+int my_custom_element_inf_output(t_element *object_info, t_flag *flags) {
     if (flags->is_G) {
         my_custom_element_color_output(object_info->stat.st_mode);
     }
@@ -19,3 +19,4 @@ int my_custom_element_inf_output(CustomElement *object_info, CustomFlags *flags)
 
     return counter;
 }
+

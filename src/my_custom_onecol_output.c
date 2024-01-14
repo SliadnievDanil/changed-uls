@@ -7,3 +7,4 @@ void my_custom_onecol_output(t_list *elements_data, t_flags *flags) {
         elements_data = elements_data->next;
     }
 }
+
