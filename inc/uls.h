@@ -46,10 +46,10 @@ typedef enum {
 } t_hidden;
 
 typedef struct {
-    CustomOutput format;
-    CustomTime time_type;
-    CustomSort sort_type;
-    CustomHidden omit;
+    t_output format;
+    t_time time_type;
+    t_sort sort_type;
+    t_hidden omit;
     bool is_R;
     bool is_G;
     bool is_F;
@@ -85,7 +85,7 @@ typedef struct {
 
 char *my_custom_take_user_info(uid_t uid, bool number);
 char *my_custom_take_group_info(gid_t gid, bool number);
-struct timespec my_custom_take_time_info(struct stat *stat, CustomTime time_type);
+struct timespec my_custom_take_time_info(struct stat *stat, t_time time_type);
 char **my_custom_take_xtr_info(const char *filename);
 t_element *my_custom_init_element_data(const char *directory, const char *name, t_flags *config);
 bool my_custom_is_hidden(const char *name, t_hidden ignore_type);

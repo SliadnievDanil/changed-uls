@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
-    CustomFlags *flags = my_custom_init_flags(argc, argv);
+    t_flags *flags = my_custom_init_flags(argc, argv);
 
     int val2 = 0;
     val2 = my_custom_validate_flags(flags);
