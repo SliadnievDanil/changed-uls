@@ -5,7 +5,7 @@ blkcnt_t my_custom_block_num(t_list *elements) {
     blkcnt_t blocks = 0;
 
     while (current != NULL) {
-        CustomElement *element_data = current->data;
+        t_element *element_data = current->data;
 
         blocks += element_data->stat.st_blocks;
         current = current->next;
