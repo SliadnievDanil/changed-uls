@@ -84,9 +84,9 @@ void mx_pop_front(t_list **head);
 void mx_pop_back(t_list **head);
 int mx_list_size(t_list *list);
 t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
-void mx_clear_list(t_list **list); // custom
-t_list *mx_sort_list_vertices(t_list *lst, void *vertex, bool(*cmp)(void *, void *, void *)); // custom
-t_list *mx_sort_list_objects(t_list *list, bool (*cmp)(void *, void *), bool reverse); // custom
+void mx_clear_list(t_list **list); 
+t_list *mx_sort_list_vertices(t_list *lst, void *vertex, bool(*cmp)(void *, void *, void *)); 
+t_list *mx_sort_list_objects(t_list *list, bool (*cmp)(void *, void *), bool reverse); 
 
 #endif
 

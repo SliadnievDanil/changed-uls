@@ -155,4 +155,9 @@ char *my_custom_strjoin_with_delim(const char *s1, const char *s2, char delim);
 int my_custom_validate_elements(t_list* elements);
 int my_custom_validate_flags(CustomFlags *flags);
 
+void mx_clear_list(t_list **list); 
+t_list *mx_sort_list_vertices(t_list *lst, void *vertex, bool(*cmp)(void *, void *, void *)); 
+t_list *mx_sort_list_objects(t_list *list, bool (*cmp)(void *, void *), bool reverse); 
+
 #endif
+

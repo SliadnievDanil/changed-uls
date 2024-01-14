@@ -1,6 +1,6 @@
-#include "libmx.h"
+#include "uls.h"
 
-void mx_clear_list(t_list **list) {
+void my_custom_clear_list(t_list **list) {
     t_list *current = *list;
     t_list *temp = NULL;
 
