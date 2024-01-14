@@ -65,10 +65,10 @@ typedef struct {
     bool is_n;
     bool is_q;
     bool is_H;
-} t_flag;
+} t_flags;
 
-CustomFlags *my_custom_make_flags(void);
-CustomFlags *my_custom_init_flags(int argc, char *argv[]);
+t_flags *my_custom_make_flags(void);
+t_flags *my_custom_init_flags(int argc, char *argv[]);
 
 /* Custom Objects (files and directories) information pack */
 typedef struct {
@@ -87,7 +87,7 @@ char *my_custom_take_user_info(uid_t uid, bool number);
 char *my_custom_take_group_info(gid_t gid, bool number);
 struct timespec my_custom_take_time_info(struct stat *stat, CustomTime time_type);
 char **my_custom_take_xtr_info(const char *filename);
-CustomElement *my_custom_init_element_data(const char *directory, const char *name, t_flags *config);
+t_element *my_custom_init_element_data(const char *directory, const char *name, t_flags *config);
 bool my_custom_is_hidden(const char *name, t_hidden ignore_type);
 bool my_custom_take_dir_info(t_list **objects, const char *name, t_flags *config);
 void my_custom_free_element_data(t_element *element_data);
@@ -130,14 +130,14 @@ void my_custom_element_size_output(off_t size, int width);
 void my_custom_element_xtr_output(t_element *element_data, bool human_readable);
 void my_custom_element_acl_output(acl_t acl);
 void my_custom_L_output_single(t_element *elements_data, t_width *width, t_flags *config);
-CustomWidth my_custom_maxlen_l(t_list *elements_data, t_flags *config);
+t_width my_custom_maxlen_l(t_list *elements_data, t_flags *config);
 void my_custom_L_output(t_list *elements_data, t_flags *config);
 
 /* Custom Multicolumn formatted output pack */
 int my_custom_maxlen_default(t_list *elements_data);
 int my_custom_find_space_len(void);
 void my_custom_cols_output(int width, int tab_width);
-CustomElement **my_custom_create_arr_from_list(t_list *elements_data, int *count);
+t_element **my_custom_create_arr_from_list(t_list *elements_data, int *count);
 void my_custom_default_output(t_list *elements_data, t_flags *config);
 
 /* Custom main pack */
