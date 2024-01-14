@@ -42,12 +42,12 @@ void my_custom_L_output_single(t_element *elements_data, t_width *width, t_flags
         }
 
         my_custom_print_l_str(str, width->size, true);
-        my_custom_free(str);
-        mx_free(hex);
+        free(str);
+        free(hex);
     } else if (flags->is_h) {
         my_custom_element_size_output(elements_data->stat.st_size, width->size);
     } else {
-        mx_lnum_out(elements_data->stat.st_size, width->size);
+        my_custom_lnum_out(elements_data->stat.st_size, width->size);
     } 
 
     mx_printchar(' ');
